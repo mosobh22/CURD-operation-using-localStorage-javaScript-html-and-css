@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="System.css"/>
+        <title>Management project</title>
+    </head>
+    <body>
+        <header>
+            <h1>Management System</h1>
+            <p>
+                to manage your operation
+            </p>
+        </header>
+
+        <section class="inputs">
+            <div class="input">
+                <input type="text" placeholder="title" class="title inputfield" id="title">
+                <div class="collection">
+                    <input type="number" placeholder="price" class="inputfield" id="price" onkeyup="totalprice()">
+                    <input type="number" placeholder="ads" class="inputfield" id="ads" onkeyup="totalprice()">
+                    <input type="number" placeholder="taxs" class="inputfield" id="taxs" onkeyup="totalprice()">
+                    <input type="number" placeholder="discount" class="inputfield" id="discount" onkeyup="totalprice()">
+                    <label class="total">0</label>
+                    
+                </div>
+                <div class="ma">
+                    <input type="number" placeholder="quantity" class="title inputfield" id="quantity">
+                </div>
+                <div class="ma">
+                    <input type="text" placeholder="category" class="title inputfield" id="category">
+                </div>
+                <div class="update delete" id="update">
+                    <input type="button" value="update" class="editebtn inputfield title Create" id="updateElement">
+                    <input type="button" value="cancel" class="editebtn inputfield title Create" id="cancel">
+                </div>
+                <div class="ma">
+                    <input type="button" value="Create" class="title inputfield Create" id="Creat">
+                </div>
+                <div class="ma">
+                    <input type="text" placeholder="search" class="title inputfield" id="search" onkeyup="showbyId()">
+                </div>
+                <div class="ma">
+                    <input type="button" value="Search by ID" class="title inputfield btn" id="searchId">
+                    <input type="button" value="search by category" class="title inputfield btn" id="searchCategory" >
+                </div>
+                <div class="ma delete" id="deleteAll">
+                    <input type="button" value="Delete All" class="title inputfield Create" id="delet">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tabel">
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>title</th>
+                            <th>price</th>
+                            <th>taxes</th>
+                            <th>ads</th>
+                            <th>discount</th>
+                            <th>total</th>
+                            <th>category</th>
+                            <th>update</th>
+                            <th>delete</th>
+        
+                        </tr>
+
+                    </thead>
+   
+                    <tbody id="tablebody">
+                        
+
+                    </tbody>
+                </table>
+
+        </section>
+        
+
+
+
+
+        <script src="System.js"></script>
+    </body>
+</html>
